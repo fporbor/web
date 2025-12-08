@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos Premium</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="nav-item">
+            <span class="nav-label">(Volver a inicio)</span>
+            <a href="index.html" class="nav-icon" title="Inicio">
+                <i class="fa-solid fa-desktop"></i>
+            </a>
+        </div>
+
+        <div class="nav-item">
+            <span class="nav-label">(Ver tus cursos)</span>
+            <a href="#" class="nav-icon" title="Mis Cursos">
+                <!-- Mockup has a computer server icon? Using standard for now -->
+                <i class="fa-solid fa-server"></i>
+            </a>
+        </div>
+
+        <div class="nav-item">
+            <span class="nav-label">(Acceder a tu cuenta)</span>
+            <a href="login.html" class="cta-button small">Mi cuenta</a>
+        </div>
+
+        <div class="nav-item">
+            <span class="nav-label">(Navbar daltonismo)</span>
+            <a href="#" id="toggle-colors" class="nav-icon" title="Cambiar Tema">
+                <i class="fa-solid fa-eye"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hidden Color Menu -->
+    <div id="color-menu">
+        <div class="color-option" style="background-color: #0f172a;" data-color="#0f172a" data-accent="#38bdf8"
+            title="Deep Blue"></div>
+        <div class="color-option" style="background-color: #1a0b2e;" data-color="#1a0b2e" data-accent="#d946ef"
+            title="Deep Purple"></div>
+        <div class="color-option" style="background-color: #022c22;" data-color="#022c22" data-accent="#2dd4bf"
+            title="Deep Green"></div>
+        <div class="color-option" style="background-color: #000000;" data-color="#18181b" data-accent="#f472b6"
+            title="Midnight"></div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Bienvenido a Aesruc</h1>
+            <a href="login.html" class="cta-button large">Iniciar sesión</a>
+            <p class="subtext">(Acceder a inicio de sesión)</p>
+        </section>
+
+        <h2 class="section-title">Cursos disponibles</h2>
+
+        <div class="split-layout">
+            <!-- Free Courses -->
+            <section class="course-column">
+                <h3>Cursos gratuitos</h3>
+
+                <a href="#" class="course-card">
+                    <div class="card-header">
+                        <h4>Aprende a tocar el piano</h4>
+                        <p>Aprenderás los conceptos básicos...</p>
+                    </div>
+                    <div class="card-body">
+                        <div class="nav-arrow left"><i class="fa-solid fa-chevron-left"></i></div>
+                        <img src="piano.png" alt="Piano" class="card-image-small">
+                        <div class="nav-arrow right"><i class="fa-solid fa-chevron-right"></i></div>
+                    </div>
+                </a>
+            </section>
+
+            <!-- Paid Courses -->
+            <section class="course-column">
+                <h3>Cursos de pago</h3>
+
+                <a href="#" class="course-card">
+                    <div class="card-header">
+                        <h4>Aprende Python</h4>
+                        <p>Aprenderás a programar y obtendrás...</p>
+                    </div>
+                    <div class="card-body">
+                        <div class="nav-arrow left"><i class="fa-solid fa-chevron-left"></i></div>
+                        <img src="java.png" alt="Python" class="card-image-small">
+                        <!-- Using Java img as placeholder for Python if needed or we change name -->
+                        <div class="nav-arrow right"><i class="fa-solid fa-chevron-right"></i></div>
+                    </div>
+                </a>
+            </section>
+        </div>
+
+        <div class="footer-action">
+            <p class="subtext">(Acceder a Atención al cliente)</p>
+            <a href="contact.html" class="cta-button medium">Acceder a Atención al Cliente</a>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
